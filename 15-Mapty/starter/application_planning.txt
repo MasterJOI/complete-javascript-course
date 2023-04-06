@@ -1,0 +1,33 @@
+
+Application planning
+
+1. User stories
+Features description from user side:
+I want to log my running workouts with location, distance, time, pace and steps pre minute
+I want to log my running cycling with location, distance, time, speed and elevation gain
+I want to see all my workouts at a glance
+I want to see all my workouts at a map
+I want to see all my workouts when I live and come back later
+
+2. Compile a main features from stories
+1) Map where user clicks to add a new workout (to get location coordinates)
+2) Use geolocation of user to display suitable part of the map
+3) Form to input all the data for running4) Form to input all the data for cycling5) Display a list of saved workouts
+6) Display all workouts on the map
+7) Save user data somewhere (simply in local storage) and load from it
+
+3. Create a flow chart
+1) Page loads -> get location coords -> render map in this location
+2) User clicks on map -> render workout form
+3) User submits new workout -> render workout in list and on map -> store workouts in local storage
+4) user refresh page -> (map loaded) -> load and render workouts from local storage
+5) User clicks on workout on map -> move map to center of location
+
+4. Architecture
+In which form it will be implemented
+1. Decide where and how to store the data
+
+
+
+    /*https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}.png*/
+
