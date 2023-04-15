@@ -1,5 +1,4 @@
 // polyfill all
-import 'core-js/stable';
 // polyfill async/await
 import 'regenerator-runtime/runtime';
 import * as model from './model.js';
